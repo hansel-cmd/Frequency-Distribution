@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Frequency Distribution for Grouped and Ungrouped Data | CESA</title>
+</head>
+<body>
+    
+    <section class="pt-4">
+        <div class="container">
+            <div class="form-floating">
+                <textarea id="text-area" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                <label for="floatingTextarea2">Given Data</label>
+              </div>
+              <div class="d-grid gap-2 my-4">
+                  <button class="btn btn-primary" onclick="calculate()">Go!</button>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 m-md-0 pb-4">
+                    <div class="table-responsive">
+                        <table class="table caption-top table-striped">
+                            <caption class="text-center">Ungrouped Freq Distribution</caption>
+                            <thead class="text-center">
+                              <tr>
+                                <th scope="col">Raw Scores</th>
+                                <th scope="col">Frequency</th>
+                              </tr>
+                            </thead>
+                            <tbody id="ungrouped-tbody" class="text-center">
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="table-responsive">
+                        <table class="table caption-top table-striped">
+                            <caption class="text-center">Grouped Freq Distribution</caption>
+                            <thead class="text-center">
+                              <tr>
+                                <th scope="col">Raw Scores</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Relative Freq</th>
+                                <th scope="col">Cumulative Freq</th>
+                              </tr>
+                            </thead>
+                            <tbody id="grouped-tbody" class="text-center">
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
